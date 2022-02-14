@@ -253,32 +253,32 @@ $(document).ready(function($) {
         Google Map
     =============================================== */
 
-        var mapLocation = new google.maps.LatLng(-12.670187652691718, -39.10249695375875, 50);
-        var $mapis = $('#map');
-        if ($mapis.length > 0) {
-            var map;
-            map = new GMaps({
-                streetViewControl : true,
-                overviewMapControl: true,
-                mapTypeControl: true,
-                zoomControl : true,
-                panControl : true,
-                scrollwheel: false,
-                center: mapLocation,
-                el: '#map',
-                zoom: 16,
-                styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
-            });
-            var image = new google.maps.MarkerImage('../images/map-icon.png');
-            map.addMarker({
-                position: mapLocation,
-                icon: image,
-                title: 'Visia',
-                infoWindow: {
-                    content: '<p><strong>Visia</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>'
-                }
-            });
-        }
+        // var mapLocation = new google.maps.LatLng(-12.670187652691718, -39.10249695375875, 50);
+        // var $mapis = $('#map');
+        // if ($mapis.length > 0) {
+        //     var map;
+        //     map = new GMaps({
+        //         streetViewControl : true,
+        //         overviewMapControl: true,
+        //         mapTypeControl: true,
+        //         zoomControl : true,
+        //         panControl : true,
+        //         scrollwheel: false,
+        //         center: mapLocation,
+        //         el: '#map',
+        //         zoom: 16,
+        //         styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+        //     });
+        //     var image = new google.maps.MarkerImage('../images/map-icon.png');
+        //     map.addMarker({
+        //         position: mapLocation,
+        //         icon: image,
+        //         title: 'Visia',
+        //         infoWindow: {
+        //             content: '<p><strong>Visia</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>'
+        //         }
+        //     });
+        // }
 
     /* ==============================================
      BX-Project Slider
